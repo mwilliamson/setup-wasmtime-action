@@ -1,6 +1,6 @@
 # setup-wasmtime-action
 
-This actions adds the wasmtime binary to PATH.
+This actions adds the [wasmtime](https://github.com/bytecodealliance/wasmtime) binary to PATH.
 
 ## Usage
 
