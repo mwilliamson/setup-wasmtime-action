@@ -1,0 +1,27 @@
+{
+  "name": "setup-wasmtime-action",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "ncc build index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mwilliamson/setup-wasmtime-action.git"
+  },
+  "keywords": [],
+  "author": "Michael Williamson <mike@zwobble.org>",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/mwilliamson/setup-wasmtime-action/issues"
+  },
+  "homepage": "https://github.com/mwilliamson/setup-wasmtime-action#readme",
+  "dependencies": {
+    "@actions/core": "^1.2.6",
+    "@actions/exec": "^1.0.4",
+    "@actions/github": "^4.0.0",
+    "@actions/tool-cache": "^1.6.1",
+    "@vercel/ncc": "^0.26.1"
+  }
+}

@@ -1,0 +1,9 @@
+name: 'Set up wasmtime'
+description: 'Set up a specific version of wasmtime and add the command-line tools to the PATH'
+inputs:
+  wasmtime-version:
+    description: 'The wasmtime version'
+    required: true
+runs:
+  using: 'node12'
+  main: 'dist/index.js'

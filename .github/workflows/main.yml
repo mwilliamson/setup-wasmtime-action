@@ -1,0 +1,21 @@
+on: [push, pull_request]
+
+jobs:
+    build:
+        runs-on: ${{ matrix.os }}
+
+        strategy:
+            matrix:
+                wasmtime-version: [0.21.0]
+                os: [ubuntu-latest, macos-latest, windows-latest]
+
+        steps:
+
+        - uses: actions/checkout@v2
+
+        - name: Use wasmtime ${{ matrix.wasmtime-version }}
+          uses: ./
+          with:
+              wasmtime-version: ${{ matrix.wasmtime-version }}
+
+        - run: wasmtime -h
