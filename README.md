@@ -6,7 +6,7 @@ This action adds the [wasmtime](https://github.com/bytecodealliance/wasmtime) bi
 
 ```yaml
 - name: Use wasmtime 0.21.0
-  uses: mwilliamson/setup-wasmtime-action@v1
+  uses: mwilliamson/setup-wasmtime-action@v2
   with:
     wasmtime-version: "0.21.0"
 ```
