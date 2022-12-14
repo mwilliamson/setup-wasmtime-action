@@ -6,7 +6,7 @@ jobs:
 
         strategy:
             matrix:
-                wasmtime-version: [0.21.0]
+                wasmtime-version: ["0.21.0", "3.0.1"]
                 os: [ubuntu-latest, macos-latest, windows-latest]
 
         steps:
